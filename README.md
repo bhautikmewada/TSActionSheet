@@ -6,6 +6,7 @@ just call block method to fill UIActionSheet
 ```+(void)addActionSheet:(NSString *)title message:(NSString *)alertBody array:(NSArray *)array view:(UIView*)view withDelegate:(void(^)(NSInteger index))action;```
 
 /** property for actionsheet delegate block*/
+
 ```@property(nonatomic,copy) void (^actionSheet)(NSInteger index);```
 
 /** How to use*/
