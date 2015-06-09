@@ -7,7 +7,7 @@ just call block method to fill UIActionSheet
 /*property for actionsheet delegate block*/
 ```@property(nonatomic,copy) void (^actionSheet)(NSInteger index);```
 
-/*How to use*/
+/**How to use*/
 
     [TSActionsheet addActionSheet:@"ActionSheet" message:@"TEST" array:[NSArray arrayWithObjects:@"1", @"2", @"3", nil]     view:self.view withDelegate:^(NSInteger index){
         NSLog(@"index %ld",(long)index);
